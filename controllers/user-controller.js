@@ -48,7 +48,7 @@ exports.deleteUser=(req,res,next)=>{
         return user.destroy();
     })
     .then(()=>{
-        res.satus(204).json({success:"user is deleted"});
+        res.status(204).json({success:"user is deleted"});
     })
     .catch((err)=>{
         console.log(err);
